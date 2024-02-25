@@ -25,6 +25,10 @@ app.use(cors());
 // VIEW ENGINE
 
 // ROUTES
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.use("/api/product", productRouter);
 app.use("/api/category", categoryRouter);
 
